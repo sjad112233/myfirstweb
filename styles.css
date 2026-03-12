@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #222831;
+    color: #eeeeee;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.navigation a:hover {
+    color: #00adb5;
+}
+
+hr {
+    opacity: 10%;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.herosub {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #00adb5;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.hireMe {
+    background: #00adb5;
+    color: #fff;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+}
+
+.cv {
+    background: rgba(57, 62, 70, 0.75);
+    color: #fff;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    backdrop-filter: blur(4px);
+}
+
+/* about */
+
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.textcon {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.texttitle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.AboutTitle {
+    color: #00adb5;
+}
+
+.aboutmepar {
+    text-align: justify;
+    color: rgba(238, 238, 238, .75);
+    font-size: 1.1rem;
+}
+
+/* works */
+
+.works {
+    background-image: url("assets/svg/background.svg");
+    padding: 6rem 1rem;
+    margin: 5rem 0;
+}
+
+.workcon {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.projectTitle {
+    display: flex;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.works ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+}
+
+.works li {
+    background: rgba(57, 62, 70, .5);
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+}
+
+.works li img {
+    width: 200px;
+    transition: .3s;
+}
+
+.works li img:hover {
+    transform: scale(1.15);
+}
+
+/* contact */
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.contactTitle {
+    display: flex;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.contact {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.emailAndPhone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* tablet */
+
+@media (max-width:1024px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutMe {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .works ul {
+        justify-content: center;
+    }
+
+}
+
+/* mobile */
+
+@media (max-width:600px) {
+
+    .navigation ul {
+        gap: 1rem;
+        font-size: .9rem;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .projectTitle {
+        font-size: 1.5rem;
+    }
+
+    .texttitle {
+        font-size: 1.5rem;
+    }
+
+    .works li img {
+        width: 150px;
+    }
+
+    .contact {
+        gap: 2rem;
+    }
+
+}
